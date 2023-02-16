@@ -1,20 +1,120 @@
 <!DOCTYPE html>
-<html lang="pt-br"> !<!--Linguagem da nossa pagina-->
+<html lang="pt-br"> <!--Linguagem da nossa pagina-->
 <head>
     <meta charset="UTF-8"> <!--Tipo de caractere-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--Compatibilidade-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Dispositivos-->
-        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Inter:wght@400;700&family=Montserrat:wght@600&family=Poppins:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Bootcamp DNC</title>
 </head>
 <body>
-    <div class="container">
-        <div id="menus">
-            <h3>Home</h3>
-            <h3>Ultimas Edições</h3>
-            <h3>Requisitos para Participar</h3>
-            <h3></h3>
+    <nav id="principal"> <!--MENU DE NAVEGAÇÃO-->
+        <div id="menu">
+            <a href="">Home</a>
+            <a href="">Ultimas Edições</a>
+            <a href="">Requisitos para Participar</a>
         </div>
-    </div>
+        <button>Login</button>
+    </nav>
+    <section>
+        <header>
+            <h1>Bootcamp DNC</h1>
+            <h2>Esse será um evento exclusivo para todos os alunos<br>
+            da <b>DNC</b>, que querem <span class="invert">acelerar a carreira</span> com uma <br>
+                semana intensiva de conteúdo de mercado entre <br>
+                <span class="invert">BACK-END, FRONT-END & BANCO DE DADOS.</span></h2>
+        </header>
+        <form >
+            <div class="formGroup">
+                <label>Nome:</label>
+                <input type="text" placeholder="Insira seu nome aqui"></input>
+            </div>
+            <div class="formGroup">
+                <label>Sobrenome:</label>
+                <input type="text" placeholder="Insira seu sobrenome aqui"></input>
+            </div>
+            <div class="formGroup">
+                <label>Área de Interesse:</label>
+                    <div class="chebox-itens">
+                        <input type="checkbox" value="front">
+                        <label>Front-End</label>
+                    
+                        <input type="checkbox" value="back-end">
+                        <label>Back End</label>
+                
+                        <input type="checkbox" value="banco-de-dados">
+                        <label>Banco de dados</label>
+                    </div>
+
+                </div>
+                <div class="formGroup">
+                    <label>E-mail:</label>
+                    <input type="email" placeholder="Insira seu e-mail aqui"></input>
+                </div>
+                <div class="formGroup">
+                    <label>Telefone:</label>
+                    <input type="text" placeholder="(99) 99999-9999"></input>
+                </div>
+                <div class="formGroup">
+                    <label>Insira uma frase criativa aqui:</label>
+                    <input type="text" placeholder="Qual frase criativa você gostaria de falar? :)"></input>
+                </div>
+
+                    <input type="submit" value="Cadastrar">
+
+        </form>
+
+    </section>
+    <footer>
+        <div class="linha1">
+            <nav>
+                <h5>Escolas</h5>
+                <ul>
+                    <li>
+                        <a href="">Formação em Tecnologia</a>
+                    </li>
+                    <li>
+                        <a href="">Formação em Markeging</a>
+                    </li>
+                    <li>
+                        <a href="">Formação em Dados</a>
+                    </li>
+                    <li>
+                        <a href="">Formação em Projetos</a>
+                    </li>
+                    <li>
+                        <a href="">Formação em Produto</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav>
+                <h5>Sobre a DNC</h5>
+                <ul>
+                    <li>
+                        <a href="">História</a>
+                    </li>
+                    <li>
+                        <a href="">Missão e valores</a>
+                    </li>
+                    <li>
+                        <a href="">Trabalhe conosco</a>
+                    </li>
+                    <li>
+                        <a href="">Conteúdo gratuito</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="endereco">
+                © 2022 DTC Treinamentos & Consultoria LTDA | CNPJ: 27.995.577/0001-37 | R. Justino Cobra, 61 – Vila Ema | São José dos Campos – SP | CEP 12243-030
+            </div>
+        </div>
+        <div class="linha2">
+            <a href="">Termos de Uso</a>
+            <a href="">Politica de privacidade</a>
+        </div>
+    </footer>
 </body>
 </html>
